@@ -28,22 +28,25 @@
                         <h2 class="title"> Full Stack Developer</h2>
                     </div>
                 </div>
-                <div class="row no-gutters"> <!--switch off gutters on the first row-->
+                <div class="row no-gutters">
+                    <!--switch off gutters on the first row-->
                     <div class="col">
                         <ul id="nav" class="list-inline menucontainer">
                             <!--Then we're going to use the class of list-inline, which is supplied by Bootstrap and stops a list from displaying vertically and displays it horizontally instead.-->
-                            <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item">
+                            <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
                                 <!-- 4 elements for larger then small device and 2 for a mobile format !! We also have to give the class of list-inline-item to all <li> elements when we're using the Bootstrap list-inline class.-->
-                                <a href="#"><span>Home</span></a>
+                                <a href="#"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                                <!-- to be irgnored by screen readers -->
                             </li>
-                            <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item">
-                                <a href="#"><span>Resume</span></a>
+                            <li class="col-6 col-sm-3 list-inline-item ui-menu-color-resume menuitem">
+                                <a href="#"><i class="fa fa-graduation-cap"
+                                        aria-hidden="true"></i><span>Resume</span></a>
                             </li>
-                            <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item">
-                                <a href="#"><span>Contact</span></a>
+                            <li class="col-6 col-sm-3 list-inline-item ui-menu-color-contact menuitem">
+                                <a href="#"><i class="fa fa-address-book" aria-hidden="true"></i><span>Contact</span></a>
                             </li>
-                            <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item">
-                                <a href="#"><span>Download CV</span></a>
+                            <li class="col-6 col-sm-3 list-inline-item ui-menu-color-download menuitem">
+                                <a href="#"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
                             </li>
                         </ul>
                     </div>
