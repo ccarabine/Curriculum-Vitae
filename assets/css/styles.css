@@ -1,97 +1,114 @@
-
 /* -------------------------------------------------Colours*/
 
-.bg-color-name-title{
-    background-color:#676767;
+.bg-color-name-title {
+    background-color: #676767;
 }
-.ui-menu-color-home{
+
+.ui-menu-color-home {
     background-color: #e67e22;
 }
-.ui-menu-color-resume{
+
+.ui-menu-color-resume {
     background-color: #9b59b6;
 }
-.ui-menu-color-contact{
+
+.ui-menu-color-contact {
     background-color: #3498db;
 }
-.ui-menu-color-download{
+
+.ui-menu-color-download {
     background-color: #525252;
 }
 
 /* -------------------------------------------------Heading*/
-header{
-    margin:0;
+header {
+    margin: 0;
 }
 
-.heading{
-    margin-left:50px;
+.heading {
+    margin-left: 50px;
 }
 
-.logo {background: url("../images/rosie.jpg");
+.logo {
+    background: url("../images/rosie.jpg");
     background-position: center;
-    background-repeat: no-repeat; /*not tile*/
-    background-size:cover; /* cover the container its in*/
-    min-height:360px;
+    background-repeat: no-repeat;
+    /*not tile*/
+    background-size: cover;
+    /* cover the container its in*/
+    min-height: 360px;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
 }
-.name{
+
+.name {
     font-family: 'Exo', sans-serif;
-    font-weight:100;
-    font-size:46px;
-    margin-top:50px;
+    font-weight: 100;
+    font-size: 46px;
+    margin-top: 50px;
     color: #ffffff;
+}
 
-   
-    } 
-.title{
+.title {
     font-family: 'Roboto', sans-serif;
-    font-weight:200;
-    font-size:28px;
-    margin-top:20px;
-    margin-bottom:90px;
+    font-weight: 200;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 90px;
     color: #ffffff;
 
-    
-    } 
+
+}
 
 .list-inline-item:not(:last-child) {
     margin: 0;
-} /*When we display items inline, then the white space that's in our HTML file becomes visible as a single space between our items.*/
+}
 
-.menucontainer{
-    font-size:0;
+/*When we display items inline, then the white space that's in our HTML file becomes visible as a single space between our items.*/
+
+.menucontainer {
+    font-size: 0;
 
 }
+
 /*The problem is that means that all of our items will then have a font-size of 0, so we can no longer see them.
 We can override this by using our nav ID, targeting all the children lis and giving a font-size of 14px.
 We'll then also just set the padding to 0 as well because we want to have full control over that.*/
 
-#nav li{
-    font-size:14px;
-    padding:0;
+#nav {
+    margin: 0;
 }
-.menuitem{
-    height:120px; /* 3rd of section*/
+
+#nav li {
+    font-size: 14px;
+    padding: 0;
+}
+
+.menuitem {
+    height: 120px;
+    /* 3rd of section*/
     text-align: center;
     padding: 0;
 
 }
-.menuitem a{
-    width:100%;
-    text-decoration:none;
-    color:#fff;
+
+.menuitem a {
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
     height: 120px;
 
 }
 
-.menuitem a i{ /*We're also going to use display block so that the icon appears on a line of its own.
+.menuitem a i {
+    /*We're also going to use display block so that the icon appears on a line of its own.
     It will start and end with a new line.
     Normally, the i element is inline.*/
-    padding-top:22px;
-    display:block;
+    padding-top: 22px;
+    display: block;
     color: #fafafa;
-    font-size:26px;
+    font-size: 26px;
 
 }
 
@@ -106,3 +123,9 @@ We'll then also just set the padding to 0 as well because we want to have full c
     letter-spacing: 2px;
 }
 
+/*--------------------------------------------Hover.css*/
+
+.hvr-sweep-to-bottom::before {
+    background: rgba(0, 0, 0, 0.2);
+    height: 120px;
+}
