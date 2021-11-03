@@ -19,6 +19,9 @@
     background-color: #e67e22;
 }
 
+.bg-color-contact {
+    background-color: #fff;
+}
 .ui-menu-color-resume {
     background-color: #9b59b6;
 }
@@ -276,6 +279,33 @@ footer {
     width: 60%;
 }
 
+/* ----------------------------------------Skills */
+
+.progress {
+    position: relative; /*wrapper class */
+    height: 25px;
+    margin-bottom: 4px;
+}
+/*Remember that the progress type represents the text label.
+We want it to sit on top of the progress bar instead of over to the right.
+We also want it to be positioned to the far left.
+So to do this, we're going to set the position to absolute.
+.*/
+.progress-type { /* the text label*/
+    position: absolute; /* This is the absolute child of a relative parent*/ 
+    left: 0px;
+    font-weight: 400;
+    padding: 3px 30px 2px 10px; /* position of the text*/
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+    /*We're going to set a background color using rgba to provide some background opacity.
+So I'm going to set that to 25, 25, 25, and then 0.2 opacity.*/
+}
+
+.progress-section {
+    margin: 40px 20px;
+}
+
 /* ----------------------------------------history-heading */
 .history-heading {
     color: #fafafa;
@@ -332,4 +362,37 @@ So that will be the content, our dates.
 
 .history-items {
     margin-bottom: 30px;
+}
+
+/* ----------------------------------------Contact Form */
+
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300; /*lighter then default*/
+    margin-top: 25px; /* distance between header and below*/
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;  /*width of form*/
+}
+
+button[type="submit"] { /*targeting submit*/
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: #e84610;
+}
+
+/* ----------------------------------------Media Queries */
+
+@media(min-width: 992px) {
+    .center-form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
 }
